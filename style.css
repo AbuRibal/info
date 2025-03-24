@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+
+/* header start */
+/* navbar start */
+header {
+    height: 100vh;
+    background: url(./photo/home.jpg) center center/cover no-repeat;
+    position: relative;
+}
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(18, 61, 11, 0.5);
+}
+.home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(18, 61, 11, 0.9);
+}
+#navbar ul {
+    list-style: none;
+}
+nav * , .slogan * {
+    z-index: 10;
+}
+#navbar img {
+    height: 80px;
+    margin-left: 100px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#navbar {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul {
+    margin-right: 100px;
+    display: flex;
+}
+nav ul li a {
+    padding: 15px 25px;
+    font-weight: 800;
+}
+#navbar ul a:hover {
+    border-bottom: 3px solid #FFD700;
+}
+/* navbar end */
+
+header .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+header h1 {
+    margin-bottom: 50px;
+    color:#E8E8E8;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+header p {
+    color: #fff;
+    margin: 40px 0 40px;
+    font-size: 25px;
+}
+
+/* header end */
+
+/* start me */
+.me {
+    width: 100%;
+    height: 80vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+}
+.a-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.a-me img {
+    height: 80%;
+    max-width: 100%;
+}
+.b-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.b-me h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.b-me p {
+    text-align: center;
+    line-height: 2;
+}
+.b-me span {
+    font-size: 15px;
+    color: #caa400;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0 , 0.3);
+}
+
+/* end me */
+/* services start */
+.services {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+.services img {
+    height: 40%;
+}
+.a-serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+.a-serv h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.services ul {
+    list-style-type: circle;
+    font-size: 20px;
+    line-height: 2;
+}
+.b-serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    background: blueviolet;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h2 {
+    margin-bottom: 15pxpx;
+    font-size: 50px;
+}
+.link-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.link-f img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* services end */
