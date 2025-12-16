@@ -1,92 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="D7hXa_2DkPLe0Oyf7oeEblVMeoApub_CiQ7QT9tOCLc" />
     <meta name="description" content="موقع أبو رئبال، استعرض مشاريعي وأعمالي في البرمجة وتطوير الويب.">
-    <meta name="keywords" content="Abu ribal, Abu ri'bal, أبو رئبال, أبو ريبال
-    , مطور ويب, برمجة, تطوير مواقع, تصميم مواقع, HTML, CSS, JavaScript, مشاريع ويب, GitHub Pages
-    , مواقع احترافية, مواقع شخصية, سيرة ذاتية, مطور مستقل, فريلانسر, تعلم البرمجة,
-     تطوير الويب, UI/UX, تحسين تجربة المستخدم, Web Developer, Frontend, Backend, React, بوتات,
-    مشاريع برمجية, تعلم HTML, تعلم CSS, تحسين محركات البحث, SEO, مواقع متجاوبة, برمجة ويب, خدمات برمجية,
-     برمجة المواقع, تصميم الواجهات,
-     تجربة المستخدم, تطوير التطبيقات, مواقع سريعة,
-    استضافة المواقع, التسويق الرقمي, كود نظيف, Git, GitHub, فريلانسر عربي, أفضل المبرمجين, تطوير بوتات, مشاريع HTML,
-    مشاريع CSS, صفحات شخصية, مواقع مبرمجين,
-    مطور مواقع مستقل, تحسين الأداء, تصميم متجاوب, مواقع خفيفة, مواقع سريعة التحميل, صفحات ويب احترافية">
+    <meta name="keywords" content="Abu ribal, Abu ri'bal, أبو رئبال, أبو ريبال, مطور ويب, برمجة, تطوير مواقع, تصميم مواقع">
     <meta name="author" content="Abu Ri'bal أبو رئبال">
 
-    <!--link font awesome-->
+    <!-- رابط Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!--link css-->
+    <!-- رابط CSS -->
     <link rel="stylesheet" href="./style.css">
 
     <title>أبو رئبال | تطوير مواقع ويب احترافية</title>
+    <link rel="icon" href="./photo/logo.jpg" type="image/jpg">
 </head>
 <body>
     
-    <!--header start-->
+    <!-- الرأس -->
     <header>
-        <div  id="navbar">
-            <img  id="home" src="./photo/logo.jpg" alt="logo pesonel">
-            <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#me">Who Am I</a></li>
-                        <li><a href="#services">My Services</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-            </nav>
-        </div>
-        <div class="slogan">
-            <h1>👑 ABU Ri'BAL</h1>
-            <p>Where ideas transform into a digital structure.</p>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <img src="./photo/logo.jpg" alt="شعار أبو رئبال">
+                    <span>أبو رئبال</span>
+                </a>
+                
+                <button class="menu-toggle" aria-label="فتح القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="#me" class="nav-link"><i class="fas fa-user"></i> من أنا</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-cogs"></i> خدماتي</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> مشاريعي</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> تواصل معي</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">👑 أبو رئبال</h1>
+                <p class="hero-subtitle">حيث تتحول الأفكار إلى هياكل رقمية</p>
+                <p class="hero-description">مطور ويب متخصص في إنشاء حلول تقنية مبتكرة تعزز تجربة المستخدم وتطور الويب</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">تواصل معي</a>
+                    <a href="#projects" class="btn btn-secondary">مشاريعي</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#me"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </div>
     </header>
-    <!--header end-->
-    <!--me start-->
-    <div id="me" class="me">
-        <div  class="a-me">
 
-            <img src="./photo/me.jpg" alt="">
+    <!-- قسم من أنا -->
+    <section class="section" id="me">
+        <div class="container">
+            <h2 class="section-title">من أنا ؟</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./photo/me.jpg" alt="أبو رئبال">
+                    <div class="image-frame"></div>
+                </div>
+                <div class="about-text">
+                    <h3>أبو رئبال <span class="highlight">مطور ويب</span></h3>
+                    <p>أنا <span class="highlight">أبو رئبال</span>، مطور ويب شغوف بالبرمجة والتكنولوجيا. أسعى دائمًا لتقديم حلول مبتكرة تساعد في تطوير الويب وتعزيز تجربة المستخدم.</p>
+                    <p>أمتلك خبرة في تطوير واجهات المستخدم وتجربتها (UI/UX) وكذلك تطوير الواجهات الخلفية (Backend) باستخدام أحدث التقنيات وأساليب البرمجة.</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <span>HTML5 & CSS3</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>UI/UX Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="b-me">
-            <h2>WHO AM I ?</h2>
-            <p>I am <span>Abu Ri'bal</span>, a web developer passionate
-                about programming and technology. I always
-                strive to provide innovative solutions that
-                help develop the web and enhance user
-                experience.</p>
-        </div>
-        
-    </div>
+    </section>
 
-    <!--me end-->
+    <!-- قسم الخدمات -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <h2 class="section-title">خدماتي</h2>
+            <p class="section-subtitle">أقدم مجموعة من الخدمات التقنية المتكاملة لتحقيق أهدافك الرقمية</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تطوير الويب</h3>
+                    <p>تصميم وتطوير مواقع ويب احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>تصميم الواجهات</h3>
+                    <p>تصميم واجهات مستخدم جذابة وسهلة الاستخدام تعزز تجربة المستخدم وتحقق أهدافك.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطبيقات متجاوبة</h3>
+                    <p>تطوير تطبيقات ويب متكاملة تعمل بكفاءة على جميع أحجام الشاشات والأجهزة.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>تحسين SEO</h3>
+                    <p>تحسين محركات البحث لزيادة ظهور موقعك وتحسين ترتيبه في نتائج البحث.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>تحسين الأداء</h3>
+                    <p>تحسين سرعة وأداء المواقع لضمان تجربة مستخدم سلسة وسريعة التحميل.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>دعم فني</h3>
+                    <p>تقديم دعم فني متكامل وصيانة دورية لضمان استمرارية عمل موقعك بكفاءة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--services start-->
-    <div id="services" class="services">
-        <div class="a-serv">
-            <h2>MY SIRVICES</h2>
-            <ul>
-                <li><p>Web design and development.</p></li>
-            </ul>
+    <!-- قسم المشاريع (مثال) -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">مشاريعي</h2>
+            <p class="section-subtitle">بعض أعمالي السابقة التي تعكس مهاراتي وخبرتي</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./photo/services.jpg" alt="مشروع تطوير ويب">
+                    </div>
+                    <div class="project-info">
+                        <h3>موقع تجاري إلكتروني</h3>
+                        <p>تطوير موقع تجاري كامل بميزات عديدة وتصميم متجاوب.</p>
+                        <a href="#" class="project-link">عرض المشروع <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./photo/services.jpg" alt="مشروع تصميم واجهات">
+                    </div>
+                    <div class="project-info">
+                        <h3>منصة تعليمية</h3>
+                        <p>تصميم وتطوير منصة تعليمية بواجهة مستخدم جذابة وسهلة الاستخدام.</p>
+                        <a href="#" class="project-link">عرض المشروع <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./photo/services.jpg" alt="مشروع تطبيق ويب">
+                    </div>
+                    <div class="project-info">
+                        <h3>تطبيق إدارة المهام</h3>
+                        <p>تطبيق ويب متكامل لإدارة المهام والمشاريع بميزات متقدمة.</p>
+                        <a href="#" class="project-link">عرض المشروع <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> عرض جميع المشاريع على GitHub
+                </a>
+            </div>
         </div>
-        <div class="b-serv">
-            <img src="./photo/services.jpg" alt="">
-        </div>
-    </div>
-    <!--services end-->
-    <!--contact start-->
-    <div id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="link-f">
-             <a href="https://www.facebook.com/AbuRibalDev" target="_blank">My Facebook Page</a>
-             <a href="https://www.facebook.com/AbuRibalDev" target="_blank"><img src="./photo/facebook.jpg" alt=""></a>
-        </div>
-    </div>
-    <!--contact end-->
+    </section>
 
+    <!-- قسم التواصل -->
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <p class="section-subtitle">لا تتردد في التواصل معي لمناقشة مشروعك أو أي استفسار</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>example@aburibal.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الهاتف</h3>
+                            <p>+966 55 123 4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الموقع</h3>
+                            <p>المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/AbuRibalDev" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/AbuRibalDev" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aburibal" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/aburibal" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/966551234567" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="اسمك الكريم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="رسالتك..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./photo/logo.jpg" alt="شعار أبو رئبال">
+                    <h3>أبو رئبال</h3>
+                    <p>مطور ويب محترف</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#me">من أنا</a></li>
+                        <li><a href="#services">خدماتي</a></li>
+                        <li><a href="#projects">مشاريعي</a></li>
+                        <li><a href="#contact">تواصل معي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>خدماتي</h4>
+                    <ul>
+                        <li><a href="#">تطوير الويب</a></li>
+                        <li><a href="#">تصميم الواجهات</a></li>
+                        <li><a href="#">تطبيقات متجاوبة</a></li>
+                        <li><a href="#">تحسين SEO</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك لتصلك آخر تحديثاتي ومشاريعي الجديدة</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> أبو رئبال. جميع الحقوق محفوظة.</p>
+                <p>تم التطوير بواسطة <span class="highlight">أبو رئبال</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- رابط JavaScript -->
+    <script src="./script.js"></script>
 </body>
 </html>
